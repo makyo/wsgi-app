@@ -1,0 +1,24 @@
+name: wsgi-app
+summary: charm for running any WSGI application
+maintainer: Madison Scott-Clary <Madison.Scott-Clary@canonical.com>
+description: |
+  WSGI applications such as Django or Flask applications are web applications
+  written in python. This charm allows those applications to talk to a
+  database, a web server, a search engine, and a cache.
+tags:
+  - misc
+  - cms
+  - app-servers
+series:
+  - trusty
+  - xenial
+subordinate: false
+provides:
+  provides-relation:
+    interface: interface-name
+requires:
+  requires-relation:
+    interface: interface-name
+peers:
+  peer-relation:
+    interface: interface-name

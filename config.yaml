@@ -1,0 +1,17 @@
+options:
+  install_sources:
+    type: string
+    default: ''
+    description: |
+      Any additional sources (such as PPAs) from which to install packages
+  install_keys:
+    type: string
+    default: ''
+    description: |
+      Any additional GPG keys required for sources added by install_sources
+  extra_packages:
+    type: string
+    default: ''
+    description: |
+      Any additional packages to install on the charm's machine
+
