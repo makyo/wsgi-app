@@ -1,6 +1,7 @@
 includes:
   - layer:basic
   - layer:apt
+  - layer:git-deploy
 repo: https://github.com/makyo/wsgi-app.git
 options:
   apt:

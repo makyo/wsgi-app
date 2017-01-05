@@ -1,17 +1,15 @@
 options:
-  install_sources:
-    type: string
-    default: ''
+  pip-requirements:
+    default: requirements.txt
+    type: 'string'
     description: |
-      Any additional sources (such as PPAs) from which to install packages
-  install_keys:
-    type: string
+      The location within your project's directory of any requirements file
+      needed to install Python dependencies. An empty string will mean that
+      pip will not be run.
+  wsgi-file:
     default: ''
+    type: 'string'
     description: |
-      Any additional GPG keys required for sources added by install_sources
-  extra_packages:
-    type: string
-    default: ''
-    description: |
-      Any additional packages to install on the charm's machine
+      REQUIRED
+      The location of the file which exposes `application` to the WSGI server.
 
